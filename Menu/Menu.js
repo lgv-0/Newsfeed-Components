@@ -36,8 +36,8 @@ let menuItems = [
 
 function MenuCallback(eventSender)
 {
-  let FindMenu = eventSender.target.parentElement.getElementsByClassName("menu");
-  let Cur = (FindMenu.length > 0) ? FindMenu[0] : eventSender.target.parentElement.getElementsByClassName("menu--open")[0];
+  let FindMenu = document.getElementsByClassName("menu");
+  let Cur = (FindMenu.length > 0) ? FindMenu[0] : document.getElementsByClassName("menu--open")[0];
 
   if (Cur.attributes["class"].value.indexOf("--open") != -1)
     Cur.attributes["class"].value = "menu";
@@ -61,11 +61,6 @@ function MakeMenu(a_Items)
   return Div;
 }
 
-function ApplyMenuButton(e_Element, a_List)
-{
-  e_Element.parentElement.prepend(MakeMenu(a_List));
+document.getElementsByClassName("menu-button")[0].parentElement.append(MakeMenu(menuItems));
 
-  e_Element.addEventListener("mousedown", MenuCallback);
-}
-
-ApplyMenuButton(document.getElementsByClassName("menu-button")[0], menuItems);
+document.getElementsByClassName("menu-button")[0].addEventListener("mousedown", MenuCallback);
