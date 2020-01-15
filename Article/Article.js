@@ -85,6 +85,49 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  //New articles
+  {
+    title:"Logan's Legit Article 1",
+    date: "Jan 15th, 2020",
+    firstParagraph: `The common housefly, Musca domestica, lives in close association with people allover the world (Fig. 6.1).
+          The insects feed on human foodstuffs and wastes wherethey can pick up and transport various disease agents.
+          In addition to the housefly,a number of other fly species have adapted to life in human settlements,
+          where theypresent similar problems. In warmer climates, the filth fly, M. sorbens is of particu-lar  interest  in  this  regard. 
+          It  is  closely  related  to  the  housefly  and  consideredimportant in the spread of eye infections. 
+          Blowflies (Calliphoridae) and other flieshave been associated with the transmission of enteric infections`,
+    secondParagraph: `Eggs  are  usually  laid  in  masses  on  organic  material  such  as  manure  andgarbage. 
+          Hatching occurs within a few hours. The young larvae burrow into thebreeding material; 
+          they must obtain oxygen from the atmosphere and can, there-fore,  survive  only  where  sufficient  fresh  air  is  available.  
+          When  the  breeding  me-dium is very wet they can live on its surface only, whereas in drier materials theymay penetrate to a depth of several 
+          centimetres.`,
+    thirdParagraph: `Flies can spread diseases because they feed freely on human food and filthy matteralike. 
+          The  fly  picks  up  disease-causing  organisms  while  crawling  and  feeding. 
+          Those that stick to the outside surfaces of the fly may survive for only a few hours, but those that are ingested with the food may 
+          survive in the fly’s crop or gut forseveral days. Transmission takes place when the fly makes contact with people ortheir  food  (Fig.  6.5). 
+          Most  of  the  diseases  can  also  be  contracted  more  directlythrough contaminated food, water, air, hands and person-to-person contact. 
+          Thisreduces the relative importance of flies as carriers of disease.`
+  },
+  {
+    title:"1 elcitrA tigeL s'nagoL",
+    date: "Jan 15th, 2020",
+    firstParagraph: `.)1.6 .giF( dlrow eht revolla elpoep htiw noitaicossa esolc ni sevil ,acitsemod acsuM ,ylfesuoh nommoc ehT
+      .stnega esaesid suoirav tropsnart dna pu kcip nac yehterehw setsaw dna sffutsdoof namuh no deef stcesni ehT 
+      ,stnemelttes namuh ni efil ot detpada evah seiceps ylf rehto fo rebmun a,ylfesuoh eht ot noitidda nI 
+      .drager  siht  ni  tseretni  ral-ucitrap fo si snebros .M ,ylf htlif eht ,setamilc remraw nI .smelborp ralimis tneserpyeht erehw 
+      .snoitcefni eye fo daerps eht ni tnatropmideredisnoc  dna  ylfesuoh  eht  ot  detaler  ylesolc  si  tI 
+      snoitcefni ciretne fo noissimsnart eht htiw detaicossa neeb evahseilf rehto dna )eadirohpillaC( seilfwolB`,
+    secondParagraph: `.egabragdna  erunam  sa  hcus  lairetam  cinagro  no  sessam  ni  dial  yllausu  era  sggE
+          ;lairetam gnideerbeht otni worrub eavral gnuoy ehT .sruoh wef a nihtiw srucco gnihctaH 
+          .elbaliava  si  ria  hserf  tneiciffus  erehw  ylno  evivrus  ,erof-ereht ,nac dna erehpsomta eht morf negyxo niatbo tsum yeht 
+          lareves fo htped a ot etartenep yamyeht slairetam reird ni saerehw ,ylno ecafrus sti no evil nac yeht tew yrev si muid-em  gnideerb  eht  nehW 
+          .sertemitnec`,
+    thirdParagraph: `.ekilarettam yhtlif dna doof namuh no yleerf deef yeht esuaceb sesaesid daerps nac seilF
+          .gnideef  dna  gnilwarc  elihw  smsinagro  gnisuac-esaesid  pu  skcip  ylf  ehT 
+          yam doof eht htiw detsegni era taht esoht tub ,sruoh wef a ylno rof evivrus yam ylf eht fo secafrus edistuo eht ot kcits taht esohT 
+          .)5.6  .giF(  doof  riehtro elpoep htiw tcatnoc sekam ylf eht nehw ecalp sekat noissimsnarT .syad larevesrof tug ro porc s’ylf eht ni evivrus 
+          .tcatnoc nosrep-ot-nosrep dna sdnah ,ria ,retaw ,doof detanimatnoc hguorhtyltcerid  erom  detcartnoc  eb  osla  nac  sesaesid  eht  fo  tsoM 
+          .esaesid fo sreirrac sa seilf fo ecnatropmi evitaler eht secudersihT`
   }
 ];
 
