@@ -33,3 +33,39 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+function MenuCallback(eventSender)
+{
+  let FindMenu = eventSender.target.parentElement.getElementsByClassName("menu");
+  let Cur = (FindMenu.length > 0) ? FindMenu[0] : eventSender.target.parentElement.getElementsByClassName("menu--open")[0];
+
+  if (Cur.attributes["class"].value.indexOf("--open") != -1)
+    Cur.attributes["class"].value = "menu";
+  else
+    Cur.attributes["class"].value = "menu--open";
+}
+
+function MakeMenu(a_Items)
+{
+  let Div = document.createElement("div");
+
+  Div.setAttribute("class", "menu");
+
+  Div.appendChild(document.createElement("ul"));
+
+  a_Items.forEach((s_Current) => 
+    {
+      Div.children[0].appendChild(Object.assign(document.createElement("li"), {"innerText":s_Current}));
+    });
+
+  return Div;
+}
+
+function ApplyMenuButton(e_Element, a_List)
+{
+  e_Element.parentElement.prepend(MakeMenu(a_List));
+
+  e_Element.addEventListener("mousedown", MenuCallback);
+}
+
+ApplyMenuButton(document.getElementsByClassName("menu-button")[0], menuItems);
