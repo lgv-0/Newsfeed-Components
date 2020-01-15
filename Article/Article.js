@@ -112,3 +112,42 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function ExpandCallback(eventSender)
+{
+  if (eventSender.target.parentElement.attributes["class"].value.indexOf("-open") == -1)
+  {
+    eventSender.target.parentElement.attributes["class"].value = "article-open";
+    eventSender.target.innerText = "Close";
+  }
+  else
+  {
+    eventSender.target.parentElement.attributes["class"].value = "article";
+    eventSender.target.innerText = "Read More";
+  }
+}
+
+function CreateArticleContainment(o_Data)
+{
+  let Div = document.createElement("div");
+  
+  Div.setAttribute("class", "article");
+
+  Div.appendChild(Object.assign(document.createElement("h2"), {"innerText":o_Data["title"]}));
+
+  Div.appendChild(Object.assign(document.createElement("p"), {"innerText":o_Data["date"]}));
+  Div.children[Div.children.length - 1].setAttribute("class", "date");
+
+  Div.appendChild(Object.assign(document.createElement("p"), {"innerText":o_Data["firstParagraph"]}));
+  Div.appendChild(Object.assign(document.createElement("p"), {"innerText":o_Data["secondParagraph"]}));
+  Div.appendChild(Object.assign(document.createElement("p"), {"innerText":o_Data["thirdParagraph"]}));
+
+  Div.appendChild(Object.assign(document.createElement("span"), {"innerText":"Read More"}));
+  Div.children[Div.children.length - 1].setAttribute("class", "expandButton");
+  Div.children[Div.children.length - 1].addEventListener("mousedown", ExpandCallback);
+
+  return Div;
+}
+
+for (let i = 0; i < data.length; i++)
+  document.getElementsByClassName("articles")[0].appendChild(CreateArticleContainment(data[i]));
