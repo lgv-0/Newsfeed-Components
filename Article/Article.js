@@ -160,7 +160,7 @@ function ExpandCallback(eventSender)
 {
   if (eventSender.target.parentElement.attributes["class"].value.indexOf("-open") == -1)
   {
-    eventSender.target.parentElement.attributes["class"].value = "article-open";
+    eventSender.target.parentElement.attributes["class"].value = "article article-open";
     eventSender.target.innerText = "Close";
   }
   else

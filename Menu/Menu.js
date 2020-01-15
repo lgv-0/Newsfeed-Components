@@ -42,7 +42,7 @@ function MenuCallback(eventSender)
   if (Cur.attributes["class"].value.indexOf("--open") != -1)
     Cur.attributes["class"].value = "menu";
   else
-    Cur.attributes["class"].value = "menu--open";
+    Cur.attributes["class"].value = "menu menu--open";
 }
 
 function MakeMenu(a_Items)
